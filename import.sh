@@ -10,7 +10,7 @@ for ANO in {2017..2017}; do
 	    echo "$(date "+%d-%m-%Y %H:%M:%S")"
 		START=$(date +%s)
 
-		mongoimport -d bolsafamilia -c bolsafamilia --type tsv --file csv/${ANO}${MES}_BolsaFamiliaFolhaPagamento.csv --headerline
+		mongoimport -d bolsafamilia -c bolsafamilia --type tsv --file csv/${ANO}${MES}_BolsaFamilia_Pagamentos.csv --headerline
 		rm ${ANO}${MES}_BolsaFamiliaFolhaPagamento.csv
 
 	    echo "$(date "+%d-%m-%Y %H:%M:%S")"
